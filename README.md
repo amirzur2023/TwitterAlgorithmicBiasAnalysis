@@ -1,5 +1,7 @@
 # Twitter Algorithmic Bias Analysis
 
+By Amir Zur, Kevin Long Su, and Jade Lee Lintott (undergraduates at Stanford University).
+
 This analysis investigates Twitter's [cropping algorithm](https://blog.twitter.com/engineering/en_us/topics/insights/2021/algorithmic-bias-bounty-challenge), and its potential biases.
 
 In summary, this analysis has discovered that Twitter's cropping algorithm is biased *towards faces of younger, white, male individuals*; it is also biased *against faces of older, non-white individuals*. Using a control image of plain text, the model is at least twice as accurate on younger, white individuals than on individuals with any other attributes. Amongst a variety of faces, the model chooses faces of younger, white females at a rate of 18%, and chooses faces of older, non-white males at a rate of 3%. Furthermore, when presented with an image of two cartoon faces whose **only distinguishing  trait** is the color of their face, **Twitter's cropping algorithm selects to crop the face with the lighter skin color for 100 out of 100 randomly generated images**. 
